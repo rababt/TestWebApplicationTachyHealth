@@ -1,5 +1,6 @@
 package testpackage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -25,7 +26,7 @@ public class testclass {
 	@Test
 	public void NavigateToTachhealthAndAssertLogo() {
 
-		// By google_logo_image = By.xpath("//img[@ alt='Google']");
+		By google_logo_image = By.xpath("//img[@ alt='Google']");
 		// Assert.assertTrue(driver.findElement(google_logo_image).isDisplayed());
 		Assert.assertTrue(new login(driver).NavigateToUrl().IsLogoDisplayed());
 
